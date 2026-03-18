@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*=====================(header)==================*/
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to left, rgba(255, 127, 95, 0.74), rgba(254, 180, 123, 0.452), rgba(255, 205, 112, 0.502));
+    padding-bottom: 5px;
+}
+
+.top ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.top img {
+    height: 90px;
+    width: 135px;
+}
+
+/*=======================(welcome)================*/
+.welcome div {
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    line-height: 3;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.279);
+    padding-bottom: 10px;
+    margin-bottom: 300px;
+}
+
+.welcome h2 {
+    color: #ffd89b;
+    font-size: 30px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    color: #ff7f5f;
+}
+
+.welcome p {
+    color: white;
+    font-size: 18px;
+}
+
+.welcome button {
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ff7f5f, #ffc371);
+    border-radius: 40px;
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    border: none;
+}
+
+/*====================(services)=====================*/
+.services {
+    background-color: #fff8f0;
+}
+
+.services .htt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.htt img {
+    height: 60px;
+    width: 300px;
+}
+
+.tours {
+    display: flex;
+    gap: 40px;
+    padding: 2rem 5rem;
+}
+
+.tours .one {
+    height: 250px;
+    width: 380px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.tours .one i {
+    color: #06676f;
+    padding: 20px 0px;
+    font-size: 35px;
+}
+
+.one h3 {
+    color: orangered;
+    padding-bottom: 10px;
+}
+
+/*======================(popular)==================*/
+.popular {
+    /* position: relative; */
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.popular .pop img {
+    height: 80px;
+    width: 300px;
+}
+
+.popular .pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular .state {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    height: auto !important;
+    padding: 20px;
+    grid-template-areas: "delhi delhi jodhpur"
+        "agra jaipur jodhpur";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
+}
+
+.delhi img {
+    height: 300px;
+    width: 1000px;
+}
+
+/* .delhi::before {
+    content: "Delhi";
+    height: 20px;
+    width: 39px;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+} */
+.agra img {
+    height: 302px;
+    width: 480px;
+}
+
+.jaipur img {
+    height: 300px;
+    width: 500px;
+}
+
+.jodhpur img {
+    height: 300px;
+    width: 400px;
+}
+
+
+/*========================(choose)==================*/
+.choose {
+    background-color: #fff8f0;
+    text-align: center;
+}
+
+.choose .us img {
+    width: 320px;
+    height: 70px;
+}
+
+.planning {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr));
+    padding: 100px;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.planning .box {
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.059);
+}
+
+/* .planning .box, div, h1, p{
+    padding-top: 30px;
+} */
+.box h1 {
+    color: #06676f;
+}
+
+.box p {
+    line-height: 2;
+    color: grey;
+}
+
+.box button {
+    margin-top: 20px;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    border: none;
+}
+
+/*=====================(happy)=====================*/
+.happy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.face img {
+    height: 90px;
+    width: 350px;
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b4020;
+    padding: 50px 50px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+}
+.share a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    padding: 10px 40px;
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+}
+.share a img {
+    height: 30px;
+    width: 30px;
+}
+
+/*====================(test)=====================*/
+.test img{
+    height: 65px;
+    width: 370px;
+}
+.test{
+    padding: 50px;
+    text-align: center;
+}
+.comments .three img{
+    height: 60px;width: 60px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    padding: 2px;
+}
+.comments{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 50px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.three .name p{
+    color: #ff7f5f;
+    font-size: 20px;
+    font-weight: 650;
+}
+.three p{
+    color: grey;
+}
+.three{
+    border: 1px solid;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 127, 95, 0.1), rgba(255, 205, 112, 0.1));
+    text-align: start;
+}
+.three h3{
+    padding: 10px 0;
+}
+.star{
+    padding: 10px 0;
+    color: yellow;
+    font-size: 20px;
+}
+footer{
+
+    background-color: #06676f;
+    background: linear-gradient(
+    to left,
+    rgb(255, 127, 95),
+    rgba(254, 180, 123, 0.304),
+    rgb(255, 205, 112)
+  );
+    color: #06676f;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-inline: auto;
+}
