@@ -12,6 +12,7 @@
     justify-content: space-around;
     background: linear-gradient(to left, rgba(255, 127, 95, 0.74), rgba(254, 180, 123, 0.452), rgba(255, 205, 112, 0.502));
     padding-bottom: 5px;
+    
 }
 
 .top ul {
@@ -35,9 +36,10 @@
     margin-right: 500px;
     line-height: 3;
     margin-top: 150px;
-    background-color: rgba(0, 0, 0, 0.279);
+    background-color: rgba(0, 0, 0, 0.744);
     padding-bottom: 10px;
     margin-bottom: 300px;
+    border-radius: 50px;
 }
 
 .welcome h2 {
@@ -65,6 +67,19 @@
     font-size: 20px;
     border: none;
 }
+.welcome video{
+    height: 100%;width: 100%;
+}
+.welcome{
+    position: relative;
+}
+.welbox {
+    position: absolute;
+    top: 0;
+    padding: 26px;
+    right: px;
+}
+
 
 /*====================(services)=====================*/
 .services {
@@ -133,15 +148,9 @@
     display: grid;
     gap: 15px;
     width: 100%;
-    /* height: auto !important; */
     padding: 20px;
-    /* grid-template-areas: "delhi delhi jodhpur"
-        "agra jaipur jodhpur"; */
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr); */
+    grid-template-rows:250px 250px;
 }
 
 .state img {
@@ -152,53 +161,127 @@
 }
 
 .delhi {
-    /* grid-column: 1;
-    grid-row: 1/3; */
     grid-row: 1;
     grid-column: 1 / -2;
 }
 
 .jodhpur {
     grid-column: 3/-1;
-    grid-row: 1/4;
+    grid-row: 1/3;
 }
 .agra {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
 }
 .jaipur {
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
 }
 
-/* .delhi::before {
+.delhi::after {
     content: "Delhi";
-    height: 20px;
     width: 39px;
     position: absolute;
-    background-color: black;
+    z-index: 2;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    bottom: -83.6rem;
+    left: 45rem;
+}
+.delhi::before {
+    content: "30% Off";
+    width: 65px;
+    position: absolute;
+    bottom: -80.rem;
     z-index: 1;
-    color: white;
     margin: 10px;
-    padding: 10px;
-} */
-/* .agra img {
-    height: 302px;
-    width: 480px;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.jodhpur::after {
+    content: "Jodhpur";
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    bottom: -100.2rem;
+    right: 3rem;
+}
+.jodhpur::before {
+    content: "20% Off";
+    width: 65px;
+    position: absolute;
+    bottom: -80.rem;
+    z-index: 1;
+    margin: 10px;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 9px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.agra::after {
+    content: "Agra";
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    bottom: -100.2rem;
+    left: 45rem;
+}
+.agra::before {
+    content: "20% Off";
+    width: 65px;
+    position: absolute;
+    bottom: -80.rem;
+    z-index: 1;
+    margin: 10px;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.jaipur::before {
+    content: "25% Off";
+    width: 65px;
+    position: absolute;
+    bottom: -80.rem;
+    z-index: 1;
+    margin: 10px;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.jaipur::after {
+    content: "Jaipur";
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to left, rgb(255, 127, 95), rgb(254, 180, 123), rgb(255, 205, 112));
+    color: #06676f;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    bottom: -100.2rem;
+    left: 20.2rem;
 }
 
-.jaipur img {
-    height: 300px;
-    width: 500px;
-}
 
-.jodhpur img {
-    height: 300px;
-    width: 400px;
-} */
-
-
-/*========================(choose)==================*/
+/*=========================(choose)========================*/
 .choose {
     background-color: #fff8f0;
     text-align: center;
@@ -228,9 +311,15 @@
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.059);
 }
 
-/* .planning .box, div, h1, p{
+.planning .box div{
     padding-top: 30px;
-} */
+}
+.planning .box h1{
+    padding-top: 30px;
+}
+.planning .box p{
+    padding-top: 30px;
+}
 .box h1 {
     color: #06676f;
 }
